@@ -1,0 +1,18 @@
+{
+  "name": "number_game",
+  "version": "1.0.0",
+  "description": "Simple game using express and ejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Scott Rock",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6"
+  }
+}
