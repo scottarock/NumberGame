@@ -4,11 +4,33 @@
     <meta charset="utf-8">
     <title>Great Number Game</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" charset="utf-8"></script>
+    <script src="/javascript/script.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="wrapper">
-      <h1>Welcome to the Great Number Game</h1>
-      <p><%= number %></p>
+      <h1>Welcome to the Great Number Game!</h1>
+      <p>I am thinking of a number between 1 and 100</p>
+      <p>Take a guess</p>
+      <% if ( text ) { %>
+        <div id="results" style="background-color: <%= color %>">
+          <p><%= text %></p>
+          <% if ( guessed ) { %>
+            <form action="/reset" method="post">
+              <button>Play Again!</button>
+            </form>
+          <% } %>
+        </div>
+      <% } %>
+      <% if ( !guessed ) { %>
+        <fieldset>
+          <form class="" action="/process-guess" method="post">
+            <input type="text" name="guess">
+            <br>
+            <button>Submit</button>
+          </form>
+        </fieldset>
+      <% } %>
     </div>
   </body>
 </html>

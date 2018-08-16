@@ -5,6 +5,42 @@
 }
 
 div.wrapper {
-  margin: 25px;
+  width: 75%;
+  margin: 100px 25px 0px;
   text-align: center;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+fieldset {
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+input {
+  padding: 4px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 4px 8px;
+  font-size: 1em;
+  background-color: gainsboro;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#results {
+  width: 150px;
+  margin: 20px auto;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+#results p {
+  font-size: 1.8em;
+  color: white;
 }
